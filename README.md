@@ -19,7 +19,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/frapiocov/xrpaestumgate">
-    <img src="images/xpg.png" alt="Logo" width="200" height="200">
+    <img src="images/xpg.png" alt="Logo" width="200" height="100">
   </a>
 
 <h3 align="center">XR-PaestumGate</h3>
