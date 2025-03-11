@@ -76,80 +76,100 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* Unity
+* Unity version 2022.3.53f1 LTS
 * C#
-* Meta SDK
+* Meta All in One SDK
 * 3DS Max Studio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps:
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Before starting, ensure you have the following installed:
+- **Unity Hub** (latest version recommended)
+- **Unity Editor**
+- **Git** (for cloning the repository)
+- **Visual Studio** (or another compatible IDE for script editing)
+- **Meta Quest Link** and **Meta Quest Developer Hub** (if you have a Meta standalone VR device). Alternatively, download the software from the producer of your vr device
+- **3DS Studio Max** (latest version recommended) for import all the scene's prefab. The software is available on a pay-per-use licence, but a 7-day trial is sufficient to import the necessary project requirements
+
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/frapiocov/xrpaestumgate.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
+2. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
+3. Open Unity Hub
+4. Click **Open** and select the cloned project folder
+5. Ensure you have the correct Unity version (2022.3.53f1) installed.
+6. Wait for Unity to load the project and compile assets. (ensure you have 3DS Max installed and with active license)
+7. Install Dependencies
+  - Open the **Package Manager** (`Window` > `Package Manager`)
+  - Install any missing dependencies or packages
+  - If required, configure **Oculus Plugin Management** for VR support
+8. Build
+  - Go to File > Build Settings
+  - Select the platform: Android
+  - Click Switch Platform if needed
+  - Setup the *Scenes in Build* with the project Scenes (it is recommended to use the menu scene as first in the list). an example of what it should look like in the image below
+  <p align="center">
+    <img src="images/project/build.jpg" alt="Logo" width="380">
+  </p>
+
+9. Run the project
+  - Click Play in the Unity Editor to test the game
+  - For a standalone build, click **Build and Run** in the Build Settings window. The result is an **apk** file for your VR device
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+The versions (VR and desktop) of the game are divided in two different directories, both have the same game modes:
+- Exploration: freely explore the ancient site of Paestum on foot or using the chariot
+- Chariot Run: timed chariot race along a predefined route
+- Key Places: explore the map and locate the points of interest on the map within a time limit
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The following is the Scenes directories:
+  <p align="center">
+    <img src="images/project/scenes.jpg" alt="Scenes" width="400">
+  </p>
+The subdirectories contains all the Scenes for Desktop and VR version of XR-PaestumGate as visible from the images below
+<p align="center">
+    <img src="images/project/dtscenes.jpg" alt="Desktop" width="220">
+    <img src="images/project/vrscenes.jpg" alt="Desktop" width="280">
+</p>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Troubleshooting
+- If errors occur, check the **Console** for logs
+- Ensure all **Unity packages** are installed and up to date
+- Restart Unity or delete the `Library` folder if necessary
+- Verify that **Oculus software** is running (for VR projects)
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Add hint for keyplaces modality 
+- [ ] Minimap for VR mode
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
@@ -175,8 +195,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/frapiocov/xrpaestumgate/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=frapiocov/xrpaestumgate" alt="contrib.rocks image" />
 </a>
 
 
@@ -215,15 +235,15 @@ Project Link: [https://github.com/frapiocov/xrpaestumgate](https://github.com/fr
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-url]: https://github.com/frapiocov/xrpaestumgate/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/frapiocov/xrpaestumgate.svg?style=for-the-badge
+[forks-url]: https://github.com/frapiocov/xrpaestumgate/network/members
+[stars-shield]: https://img.shields.io/github/stars/frapiocov/xrpaestumgate.svg?style=for-the-badge
+[stars-url]: https://github.com/frapiocov/xrpaestumgate/stargazers
+[issues-shield]: https://img.shields.io/github/issues/frapiocov/xrpaestumgate.svg?style=for-the-badge
+[issues-url]: https://github.com/frapiocov/xrpaestumgate/issues
+[license-shield]: https://img.shields.io/github/license/frapiocov/xrpaestumgate.svg?style=for-the-badge
+[license-url]: https://github.com/frapiocov/xrpaestumgate/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/pg_explore.png
