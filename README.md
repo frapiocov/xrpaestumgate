@@ -234,7 +234,7 @@ Project Link: [https://github.com/frapiocov/xrpaestumgate](https://github.com/fr
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/frapiocov/xrpaestumgate.svg?style=for-the-badge
 [contributors-url]: https://github.com/frapiocov/xrpaestumgate/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/frapiocov/xrpaestumgate.svg?style=for-the-badge
 [forks-url]: https://github.com/frapiocov/xrpaestumgate/network/members
